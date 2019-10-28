@@ -15,8 +15,8 @@ def connect():
 
     global con,upcoming_news_dic,opened_possitions_list
 
-    token = '786733bea669469874c5b4f45be1e1766ac9066b'  # real
-    con = fxcmpy.fxcmpy(access_token=token, log_level="error",server='real')
+    token='insert your token here'
+    con = fxcmpy.fxcmpy(access_token=token, log_level="error")
     print(con.get_accounts())
     openedCurrency()
     print('OK')
