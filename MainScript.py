@@ -22,8 +22,8 @@ class PythonDB:
 
     def __init__(self):
         try:
-            PythonDB.connection = pymysql.connect('127.0.0.1','root','', 'test') # servername or ip/ username/ password/ databasename
-            PythonDB.cursor = PythonDB.connection.cursor() #cursor is used to execute the database commands
+            PythonDB.connection = pymysql.connect('127.0.0.1','root','', 'test') 
+            PythonDB.cursor = PythonDB.connection.cursor()
         except Exception as e:
             print(e.args)
         else:
@@ -46,7 +46,7 @@ class PythonDB:
         except Exception as e:
            print(e.args)
         else:
-            PythonDB.connection.commit()  # save changes in the table content
+            PythonDB.connection.commit() 
             print("Record inserted succesfully")
 
 
