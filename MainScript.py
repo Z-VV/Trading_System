@@ -495,7 +495,7 @@ def MainWhile():
                 min_15_check()
             if currenttime.minute % 5 == 0:
                 min_5_check()
-        min_1_check()
+            min_1_check()
         time.sleep(1)
 
 con=run.connect()
