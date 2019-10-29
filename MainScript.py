@@ -14,12 +14,7 @@ import  moduleNews
 import moduleRun as run
 from moduleRun import connect
 register_matplotlib_converters()
-
 pd.set_option('max_columns',None)
-
-
-#token='4cbed2fca5b99cd3c5106ddac2230b46f704537e'
-
 
 class PythonDB:
     connection = None
