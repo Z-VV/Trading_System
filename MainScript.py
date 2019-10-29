@@ -481,7 +481,7 @@ def MainWhile():
                     x.Orders=True
             list_of_symbols=[]
         if currenttime.second==10 :
-            if (currenttime.hour+1) % 4==0 and currenttime.minute==0:
+            if (currenttime.hour-1) % 4==0 and currenttime.minute==0:
                 four_hour_ckeck()
             if currenttime.minute==0:
                 one_hour_check()
