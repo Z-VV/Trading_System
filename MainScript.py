@@ -272,7 +272,6 @@ def MainLoad():
         x.ready5b, x.ready5s = False,False
         x.ready1b, x.ready1s = False,False
         x.dataH4()
-
         x.dataH1()
         x.data30()
         x.data15()
@@ -289,11 +288,9 @@ def MainLoad():
         x.Orders=delete_orders(x.symbol,list_of_orders)
         print(x.symbol)
         print('x.Orders:   ' + str(x.Orders))
-
         set_all_in_correlated_list_1(x)
         set_all_in_correlated_list_2(x)
         set_all_in_correlated_list_3(x)
-
     for x in symbols:
         if x.stop:
             count=x.count(60)
@@ -411,7 +408,6 @@ def min_5_check():
     for x in symbols:
         if x.symbol in orders_symbol_list:
             x.Orders = True
-
     for x in symbols:
         if x.readyH1b or x.readyH1s:
             x.kill5()
