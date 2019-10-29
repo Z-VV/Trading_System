@@ -28,7 +28,6 @@ class PythonDB:
             print(e.args)
         else:
             print("Connection established successfully")
-
     def insertTrade(self, listi):
         try:
             command = '''INSERT INTO algo_m1 (date,tradeId,buysell,symbol) VALUES(%s,%s,%s,%s)'''
@@ -38,7 +37,6 @@ class PythonDB:
         else:
             PythonDB.connection.commit()  # save changes in the table content
             print("Record inserted succesfully")
-
     def insert_news(self,listi):
         try:
             command = '''INSERT INTO news (date,tradeId,buysell,symbol,action) VALUES(%s,%s,%s,%s,%s)'''
@@ -48,8 +46,6 @@ class PythonDB:
         else:
             PythonDB.connection.commit() 
             print("Record inserted succesfully")
-
-
     def listdata(self, tablename):
         data=None
         try:
